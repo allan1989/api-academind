@@ -4,7 +4,11 @@
   "description": "A Node.js RESTful API Tutorial Project (Build a simple shop API)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:api": "newman run collection.json --environment env.json",
+    "test:api:report": "newman run collection.json --environment env.json --reporters cli,html --reporter-html-export ./reports/api-report.html",
+    "test:api:dev": "newman run collection.json --environment env.dev.json",
+    "test:api:prod": "newman run collection.json --environment env.prod.json",
+    "test:watch": "nodemon --exec npm run test:api"
   },
   "keywords": [
     "node",
@@ -14,6 +18,7 @@
   "author": "Maximilian Schwarzmüller",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "nodemon": "^3.1.10"
   }
 }
