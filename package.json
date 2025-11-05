@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:api": "newman run collection.json --environment env.json",
-    "test:api:report": "newman run collection.json --environment env.json --reporters cli,html --reporter-html-export ./reports/api-report.html",
+    "test:api:report": "newman run collection.json --environment env.json -r htmlextra --reporter-htmlextra-export ./reports/api-report.html",
     "test:api:dev": "newman run collection.json --environment env.dev.json",
     "test:api:prod": "newman run collection.json --environment env.prod.json",
     "test:watch": "nodemon --exec npm run test:api"
@@ -19,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
-    "nodemon": "^3.1.10"
-  }
+    "newman-reporter-htmlextra": "^1.23.1"
+  },
+  "devDependencies": {}
 }
