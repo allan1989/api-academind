@@ -1,5 +1,29 @@
-# Creating a RESTful API with Node.js
-This repository accompanies my YouTube video series on building a RESTful API with Node.js: [https://www.youtube.com/playlist?list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q](https://www.youtube.com/playlist?list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q)
+# Projet démo: application de gestion de produits avec Express et une API Rest
 
-## Usage
-Check out the branch you're interested in (i.e. which belongs to the video in my series you just watched), ```git clone``` it and thereafter run ```npm install```.
+## Fonctionnalités attendues:
+
+- Ajouter de nouveaux items
+- Modifier les items existants
+- Supprimer des items
+- Lister toutes les items
+- Marques les items comme terminés
+
+## Stack Back-end
+
+- Node.js
+- Express
+
+## Méthodologies de Test
+
+- Tests manuels avec Postman
+- Tests automatisés avec Newman
+- Intégration continue sur Github
+- Génération de rapports avec Newman
+- Validation complète de l'API
+
+## Installation
+
+- Télécharger / Cloner le répertoire
+- Naviguer dans le projet
+- Installation des dépendences avec la commande: npm install
+- Application disponible sur http://localhost:4000
